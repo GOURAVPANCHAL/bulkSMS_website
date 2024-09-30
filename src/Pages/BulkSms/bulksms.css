@@ -1,0 +1,43 @@
+.request_demo{
+    background-image: url(../../images/request-demo-bg.png);
+    height: 50vh;
+    padding: 4rem 4rem;
+    width: 100%;
+}
+.smsContactUs{
+    text-align: center;
+}
+
+.international-card{
+    box-shadow: 1px 0px 6px -1px white;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.international-card img{
+    width: 30%;
+}
+.fadeInUp{
+    margin-bottom: 3rem;
+}
+.fadeInUp img{
+    /* background-color: rgba(255, 255, 255, 0.503); */
+    margin-bottom: 1rem;
+    width: 30%;
+}
+.smoicon img{
+    background-color: rgba(255, 255, 255, 0.503);
+    margin-bottom: 1rem;
+    width: 30%;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width:900px) {
+    .request_demo {
+        height: 100%;
+        padding: 2rem 0rem;
+        background-size: cover;
+    }
+    .smoicon{
+        text-align: center;
+    }
+}

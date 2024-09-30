@@ -1,0 +1,24 @@
+.whatsapp-box {
+  background-color: white;
+  padding: 1rem;
+  color: black;
+  margin-bottom: 2rem;
+  transition: all 0.5s ease-in-out;
+  border-radius: 2rem;
+}
+
+.whatsapp-box:hover {
+  background-color: black;
+  padding: 1rem;
+  color: white;
+  transition: all 0.1s ease-in;
+  margin-bottom: 2rem;
+}
+
+.social_media {
+  background-image: url(../../images/banner-shap-2.png);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}

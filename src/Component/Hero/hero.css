@@ -1,0 +1,294 @@
+.tabsTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.tabsHeading {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+  line-height: 50px;
+}
+
+.tabsDesc {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.tabsButton {
+  --color: #00a97f;
+  padding: 0.8em 1.7em;
+  background-color: transparent;
+  border-radius: 0.3em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 400;
+  font-size: 17px;
+  border: 1px solid;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--color);
+  z-index: 1;
+}
+
+.tabsButton::before,
+.tabsButton::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background: linear-gradient(to right, #f92c8b, #b02cd6);
+  transition: 1s ease;
+}
+
+.tabsButton::before {
+  top: -1em;
+  left: -1em;
+}
+
+.tabsButton::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+.tabsButton:hover::before,
+.tabsButton:hover::after {
+  height: 410px;
+  width: 410px;
+}
+
+.tabsButton:hover {
+  color: white;
+}
+
+.tabsButton:active {
+  filter: brightness(0.8);
+}
+
+.tabsCard {
+  background-image: url("../../images/background2.png");
+  height: 100%;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.nav-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tab-pane {
+  margin: auto;
+  padding: 6rem 1rem;
+}
+
+.tabsButton {
+  color: white;
+}
+
+.tabssection {
+  align-items: center;
+}
+
+.colorfulHeading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.pink {
+  color: #f92c8b;
+}
+
+.subtitle {
+  font-size: 16px;
+
+  margin-bottom: 20px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.features li {
+  font-size: 16px;
+  color: #f92c8b;
+  margin: 5px 0;
+}
+
+.services-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.services {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  color: #f92c8b;
+  margin-bottom: 20px;
+}
+
+.services li {
+  margin: 5px 0;
+}
+
+.demo-button {
+  background: linear-gradient(to right, #f92c8b, #b02cd6);
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.demo-button:hover {
+  opacity: 0.9;
+}
+
+#exTab1 .tab-content {
+  color: white;
+  background-color: #428bca;
+  padding: 5px 15px;
+}
+
+#exTab2 h3 {
+  color: white;
+  background-color: #428bca;
+  padding: 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0;
+}
+
+.tab-content {
+  background-color: black;
+  width: 500px; /* 60% of the viewport width */
+  height: 500px; /* 80% of the viewport height */
+  border: 10px solid white;
+  border-radius: 50%;
+}
+
+
+@media (max-width: 1280px) { /* Adjust for screens up to laptop size */
+  .tab-content {
+    height: 70vh; /* Change height to 70vh for laptop screens */
+  }
+}
+
+#exTab3 .tab-content {
+  color: white;
+  background-color: #428bca;
+  padding: 5px 15px;
+}
+
+.webButtons {
+  padding: 1rem 1rem;
+  border: 3px solid white !important;
+  color: white !important;
+}
+.nav-link:active {
+  color: black;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background: linear-gradient(to right, #f92c8b69 0, #b02cd68c 100%) !important;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.hover {
+  color: white;
+}
+
+.modal-content {
+  background-color: black !important;
+  line-height: 3;
+}
+.modal-header {
+  justify-content: space-between !important;
+}
+
+.close {
+  background: linear-gradient(to right, #f92c8b, #b02cd6);
+  color: #fff;
+  border: none;
+  line-height: 1.4;
+}
+
+@media only screen and (max-width:1280px) {
+  .tab-content{
+    height: 500px;
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .tabsCard {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .tab-content {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 0%;
+  }
+  .tab-pane {
+    padding: 0;
+  }
+  .tabsDesc {
+    font-size: 15px;
+  }
+  .tabsHeading {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .tabsTitle {
+    font-size: 15px;
+  }
+  .webButtons {
+    padding: 8px;
+    border: 3px solid white !important;
+  }
+
+  .heroTop .nav-tabs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .heroTop .nav-tabs .nav-link {
+    flex-basis: 42% !important;
+    font-size: 0.8rem;
+  }
+}

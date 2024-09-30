@@ -1,0 +1,78 @@
+.ourLocation {
+  background-image: url(../../images/background3.png);
+  height: 100%;
+  width: 100%;
+  padding: 5rem 2rem;
+}
+
+.locationHeading {
+  font-size: 50px;
+  font-weight: 700;
+}
+.office-text {
+  padding: 20px 0 0;
+}
+.office-text h4 {
+  margin: 0 0 10px;
+}
+.office-text p {
+  padding: 0 50px 0 0;
+  margin: 0 0 20px;
+  color: gray;
+  font-size: 18px;
+}
+.skyline-img {
+  background: #fbf4f1;
+  padding: 5px;
+  border-radius: 9px 50px 0 0;
+  box-shadow: 0 3.4px 2.7px -30px rgba(0, 0, 0, 0.059),
+    0 8.2px 8.9px -30px rgba(0, 0, 0, 0.071),
+    0 25px 40px -30px rgba(0, 0, 0, 0.2);
+}
+.skyline-img img {
+  max-height: 81px;
+}
+.office-card .office-text {
+  background: #fff;
+  padding: 20px;
+  border-radius: 0 0 9px 9px;
+}
+
+.office-card img{
+  width: 100%;
+  aspect-ratio: 2.1;
+  object-fit: cover;
+}
+
+.grad-text {
+ color: #f92c8b;
+font-size: 40px;
+}
+
+.rount-btn {
+    border: 1px solid lightgray;
+    padding: 9px 14px;
+    border-radius: 50%;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+    transition: 0.9s;
+}
+
+.social_icons_Locations {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rount-btn:hover {
+    color: #fff;
+    border: 2px solid #ff1f8e;
+    background:linear-gradient(to right, #ffbd84 0, #ff1f8e 100%);
+    transition: 0.9s;
+}
+
+@media only screen and (max-width:768px) {
+  .grad-text {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,76 @@
+.our_work {
+  background-image: url(../../images/background2.png);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  padding: 5rem 1rem;
+}
+.work {
+  position: relative;
+  overflow: hidden;
+  height: 50vh;
+}
+
+.image-wrapper {
+  height: 200px; /* Set your default height */
+  transition: height 0.3s ease;
+  border-radius: 2rem;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 1rem;
+}
+
+.image-wrapper:hover {
+  height: 100%; /* Expand to full height */
+}
+
+.image-wrapper:hover img {
+  transform: scale(
+    1.1
+  ); /* Optionally scale the image to cover the expanded height */
+}
+.custom-li li {
+  float: left;
+  margin-bottom: 15px;
+  width: calc(100% / 2);
+  padding-left: 20px;
+}
+/* 
+.price_table {
+  background-color:#f5fff3;
+} */
+
+.smspack {
+  padding: 1rem 0rem;
+  background-color: #ffffff2b;
+  backdrop-filter: blur(5px);
+  color: black;
+  letter-spacing: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-radius: 1rem;
+}
+
+.smspack:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.smspack_li {
+  font-size: 14px;
+  color: white;
+}
+
+.smspack_li .bi-check-all{
+  color: #ff1f8e;
+}
+
+.price_table{
+  background-image: url(../../images/banner-shap-2.png);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
